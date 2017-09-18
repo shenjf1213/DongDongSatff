@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Shen\Android\androidstudioworkspace\DongDongCar\PushSDK\build\intermediates\bundles\default\libs\utdid4all-1.1.5.3_proguard.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1a4a47c44b68ea5c20e370d37f1779c57211aa68">
+        <dex dex="C:\Shen\Android\androidstudioworkspace\DongDongCar\app\build\intermediates\pre-dexed\debug\utdid4all-1.1.5.3_proguard_e3f29270a44df86af4305dd04014234b1b8ded04.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Shen\Android\androidstudioworkspace\DongDongCar\PushSDK\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a908a9ecf77c0bb9ef606b0aa7a0c0dc0612eb02">
+        <dex dex="C:\Shen\Android\androidstudioworkspace\DongDongCar\app\build\intermediates\pre-dexed\debug\classes_29a9d8c4491a9460f4c7bd461ab3de107e65478b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Shen\Android\androidstudioworkspace\DongDongCar\PushSDK\build\intermediates\bundles\default\libs\alicloud-android-sdk-httpdns-1.0.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1d61bb0f23861e5b86d4308a9ed2a4751e95fe03">
+        <dex dex="C:\Shen\Android\androidstudioworkspace\DongDongCar\app\build\intermediates\pre-dexed\debug\alicloud-android-sdk-httpdns-1.0.7_fa5d58e35b1aef4de6b2660e40d0e2da338fd5ce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Shen\Android\androidstudioworkspace\DongDongCar\app\libs\gson-2.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="C:\Shen\Android\androidstudioworkspace\DongDongCar\app\build\intermediates\pre-dexed\debug\gson-2.3.1_06cb2efc84a6574a476f39ff575a3dbc506fcf7f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Shen\Android\androidstudioworkspace\DongDongCar\PushSDK\build\intermediates\bundles\default\libs\com.umeng.message_3.1.1a.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0bc9d5d99b2dadfae1ed54211b2e2b97df343305">
+        <dex dex="C:\Shen\Android\androidstudioworkspace\DongDongCar\app\build\intermediates\pre-dexed\debug\com.umeng.message_3.1.1a_04bcccf883d62b0f83b2d8d9740873acd52d6d22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Shen\Android\androidstudioworkspace\DongDongCar\app\libs\AMap3DMap_5.1.0_AMapNavi_5.1.0_AMapLocation_3.4.0_20170518.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8751e1195c0d0481efa4c2623353738916f1b669">
+        <dex dex="C:\Shen\Android\androidstudioworkspace\DongDongCar\app\build\intermediates\pre-dexed\debug\AMap3DMap_5.1.0_AMapNavi_5.1.0_AMapLocation_3.4.0_20170518_6c6d57b2a6e7261fcab6ec3aa3ccb328603c2f37.jar" />
+    </item>
+
+</items>

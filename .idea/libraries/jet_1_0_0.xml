@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="jet-1.0.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Android SDK/android-sdk-windows/.android/build-cache/a33601e41c184956afa8c7dc7a3241a0cc20d6f2/output/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Android SDK/android-sdk-windows/.android/build-cache/a33601e41c184956afa8c7dc7a3241a0cc20d6f2/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.meiyou.framework/jet/1.0.0/712c8b2319ddce122125e38cf28cf400a78c3850/jet-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

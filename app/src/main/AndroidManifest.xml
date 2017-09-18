@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dongdong.car">
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="24" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <user-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name=".com.StaffApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <service android:name="com.amap.api.location.APSService" />
+
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="c66d548fbe3f3d9ac4a0b8e5d061fd60" /> <!-- 高德地图 -->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="596580d98f4a9d659400010a" />
+
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="63befe754e9144edd2c061825e97afbc" />
+
+        <activity
+            android:name=".view.FlashActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.driverCenter.LoginActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.driverCenter.DriverCenterActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.driverCenter.DriverInformationActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.driverCenter.ForgetPasswordActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.orderRecord.OrderRecordActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.orderRecord.OrderRecordDetailActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.myWallet.MyWalletActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.myWallet.BankTypeActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.myWallet.TransactionPasActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.myWallet.VerifyTransactionPassActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.myWallet.WithdrawActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.nearOrder.NearOrderActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".view.ExamineOrderActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.driverCenterSite.DriverCenterSiteActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.driverCenterSite.ServiceModelActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.driverCenterSite.AboutUsActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.driverCenterSite.ServiceAgreementActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.driverCenter.CustomerServiceActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.driverCenterSite.accountAndSecurity.AccountAndSecurityActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.driverCenterSite.accountAndSecurity.ReplacePhoneActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.driverCenterSite.accountAndSecurity.ResetPasswordActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.driverCenterSite.accountAndSecurity.ResetPayPassActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.managerCenter.ManagerCenterActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.myWallet.TransactionRecordActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.navigationMap.NavigationActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.navigationMap.TakePicturesActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.navigationMap.OrderOnProgressActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.navigationMap.TakePicturesByAfterActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.navigationMap.OrderDetailActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.navigationMap.ShootVideoActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".view.ReceivedOrderActivity"
+            android:launchMode="singleTask" />
+    </application>
+
+</manifest>

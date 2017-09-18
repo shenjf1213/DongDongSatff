@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="golden_yellow">#d98521</color>
+    <color name="yellow">#f8b551</color>
+    <color name="green">#3cb035</color>
+    <color name="blue">#0000ff</color>
+    <color name="orange">#ec6941</color>
+    <color name="white">#ffffff</color>
+    <color name="background_color">#f1f1f1</color>
+    <color name="line_color">#bebcbc</color>
+    <color name="black">#000000</color>
+    <color name="cccccc">#cccccc</color>
+    <color name="red">#FF0000</color>
+    <color name="wel_status_color">#54C3F1</color>
+
+    <color name="bgcolor">#fafafa</color>
+    <!-- 标题 -->
+    <color name="titlebar_background">#0597FF</color>
+
+    <!-- 黄色颜色值-->
+    <color name="text_color_yellower">#F7BB38</color>
+
+    <!-- 左菜单 -->
+    <!-- 分割线 -->
+    <color name="sp_line">#dbdbdb</color>
+    <color name="line_cccccc">#cccccc</color>
+    <color name="sp_line2">#c9ced1</color>
+    <color name="sp_line3">#EEEEEE</color>
+    <color name="leftmenu_item_lable">@color/text_3d3f42</color>
+    <!-- 左菜单 -->
+
+    <!--<color name="white">#ffffff</color>-->
+    <!--<color name="black">#000000</color>-->
+    <!--<color name="gray">#dcdbdc</color>-->
+    <!--<color name="blue">#24b8d2</color>-->
+    <!-- 主页 -->
+    <color name="main_tab_pre">#0fb8d4</color>
+    <color name="main_tab_nor">#788084</color>
+    <color name="main_background">#f7f7f7</color>
+
+    <!-- 找车Tabs  -->
+    <color name="searchcar_title_bg">#f6f6f7</color>
+    <color name="searchcar_title_txt">#5e666c</color>
+    <color name="searchcar_divideline">#e0e0e0</color>
+    <color name="searchcar_itemtxtcolor">#535a62</color>
+    <color name="searchcar_itemtxtcolor2">#868d93</color>
+    <color name="searchcar_itemnumcolor">#24b6db</color>
+
+    <!-- 须知Tab -->
+    <color name="notice_tab_title">#5e666c</color>
+    <color name="notice_divideline">#e0e0e0</color>
+    <color name="notice_list_parent_color">#525b63</color>
+    <color name="notice_list_child_color">#a0a0a0</color>
+
+    <!-- 订单Tab -->
+    <color name="alert_title_color">#333333</color>
+    <color name="alert_btn__color">#00b38a</color>
+    <color name="order_title__color">#00b38a</color>
+    <color name="order_detail__bg">#f1f1f1</color>
+
+    <!-- 用户Tab -->
+    <color name="user_tab_divide_line">#d7d7d9</color>
+    <color name="user_tab_txt">#525b63</color>
+    <color name="list_view_refresh_bg">#f0f1f5</color>
+    <!-- 透明色 -->
+    <drawable name="my_btn_bg">#00000000</drawable>
+
+    <color name="coupon_item_color0">#2f3335</color>
+    <color name="coupon_item_color1">#ffe400</color>
+
+
+    <color name="navpage">#FFE1E8EB</color>
+    <color name="province_line_border">#C7C7C7</color>
+
+
+    <!-- saomiao -->
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color>
+    <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+
+    <color name="color_pressed">#9c000000</color>c
+    <color name="ripple_color">#ffeeeeee</color>
+    <color name="c575a5c">#575a5c</color>
+    <!--浅颜色字体-->
+    <color name="text_a6a6a6">#a6a6a6</color>
+    <color name="text_cccccc">#cccccc</color>
+    <!--线框-->
+    <color name="stroke_cccccc">#cccccc</color>
+    <!--线框-->
+    <color name="stroke_eeeeee">#eeeeee</color>
+    <!--重要字体颜色-->
+    <color name="text_3d3f42">#3d3f42</color>
+    <!--线条分割线-->
+
+    <color name="line_eeeeee">#eeeeee</color>
+
+</resources>

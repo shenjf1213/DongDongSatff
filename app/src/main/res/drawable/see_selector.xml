@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 设置圆角边框 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:bottomLeftRadius="@dimen/dlg_radius" />
+
+            <solid android:color="@color/line_eeeeee"></solid>
+        </shape>
+    </item>
+
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:bottomRightRadius="@dimen/dlg_radius" />
+
+            <solid android:color="@color/white"></solid>
+        </shape>
+    </item>
+
+</selector>

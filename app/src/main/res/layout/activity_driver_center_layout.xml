@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/driver_center_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/orange"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:id="@+id/driver_center_rl1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/driver_center_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="个人中心"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ToolBalTextSize" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/driver_center_tool_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/driver_center_rl2"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_below="@+id/driver_center_tool_bar">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/driver_set_head"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/head" />
+
+                <RelativeLayout
+                    android:id="@+id/driver_center_rl4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/driver_set_head">
+
+                    <TextView
+                        android:id="@+id/driver_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/driver_phone_tv"
+                        android:layout_marginBottom="10dp"
+                        android:text="姓名："
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/driver_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/driver_name_tv"
+                        android:layout_toRightOf="@+id/driver_name_tv"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/driver_phone_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="手机号："
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/driver_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/driver_phone_tv"
+                        android:layout_toRightOf="@+id/driver_phone_tv"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/driver_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/driver_phone_tv"
+                        android:layout_marginTop="10dp"
+                        android:text="等级："
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/driver_grade_iv1"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignBottom="@+id/driver_grade"
+                        android:layout_alignTop="@+id/driver_grade"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/driver_grade"
+                        android:background="@drawable/evaluation_c"
+                        android:button="@null" />
+
+                    <CheckBox
+                        android:id="@+id/driver_grade_iv2"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignBottom="@+id/driver_grade"
+                        android:layout_alignTop="@+id/driver_grade"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/driver_grade_iv1"
+                        android:background="@drawable/evaluation_un"
+                        android:button="@null" />
+
+                    <CheckBox
+                        android:id="@+id/driver_grade_iv3"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignBottom="@+id/driver_grade"
+                        android:layout_alignTop="@+id/driver_grade"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/driver_grade_iv2"
+                        android:background="@drawable/evaluation_un"
+                        android:button="@null" />
+
+                    <CheckBox
+                        android:id="@+id/driver_grade_iv4"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignBottom="@+id/driver_grade"
+                        android:layout_alignTop="@+id/driver_grade"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/driver_grade_iv3"
+                        android:background="@drawable/evaluation_un"
+                        android:button="@null" />
+
+                    <CheckBox
+                        android:id="@+id/driver_grade_iv5"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignBottom="@+id/driver_grade"
+                        android:layout_alignTop="@+id/driver_grade"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/driver_grade_iv4"
+                        android:background="@drawable/evaluation_un"
+                        android:button="@null" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/driver_center_rl3"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/driver_center_rl2"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/driver_center_ll1"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/driver_center_ll2"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/driver_center_fl1"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/order_number" />
+
+                        <TextView
+                            android:id="@+id/driver_center_order_number_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/driver_center_fl1"
+                        android:layout_marginTop="5dp"
+                        android:text="总单量/次"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/driver_center_ll2"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/driver_center_fl2"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/order_time" />
+
+                        <TextView
+                            android:id="@+id/driver_center_order_time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/driver_center_fl2"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5dp"
+                        android:text="总时长/天"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/driver_center_ll3"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/driver_center_ll2"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/driver_center_fl3"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/evaluation_rate" />
+
+                        <TextView
+                            android:id="@+id/driver_center_evaluation_rate_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/driver_center_fl3"
+                        android:layout_marginTop="5dp"
+                        android:text="好评率/%"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/driver_center_rl5"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/driver_center_rl3"
+                android:layout_marginTop="25dp">
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/auto_order" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/iv1"
+                    android:text="自动接单"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:id="@+id/driver_center_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/radio_button_backgroud_un_shape"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/close"
+                        style="@style/CustomRadioBtn"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="1dp"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/open"
+                        style="@style/CustomRadioBtn"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="1dp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/driver_center_rl5"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:id="@+id/driver_center_rl6"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/driver_center_rl5">
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/order" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/iv2"
+                    android:text="订单记录"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/right" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/driver_center_rl6"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:id="@+id/driver_center_rl7"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/driver_center_rl6">
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/wallet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/iv3"
+                    android:text="我的钱包"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/right" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/driver_center_rl7"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:id="@+id/driver_center_rl8"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/driver_center_rl7">
+
+                <ImageView
+                    android:id="@+id/iv4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/service" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/iv4"
+                    android:text="客服"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/right" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/driver_center_rl8"
+                android:background="@color/line_color" />
+
+            <RelativeLayout
+                android:id="@+id/driver_center_rl9"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/driver_center_rl8">
+
+                <ImageView
+                    android:id="@+id/iv5"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/settings" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/iv5"
+                    android:text="设置"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/right" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/driver_center_rl9"
+                android:background="@color/line_color" />
+
+            <FrameLayout
+                android:id="@+id/driver_center_work_type"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/order_type_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/start_working" />
+
+                <TextView
+                    android:id="@+id/order_type_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="开始工作"
+                    android:textColor="@color/white" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

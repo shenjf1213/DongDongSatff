@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无title -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- dim:模糊的 阴影效果 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景图片的大小也影响窗口的大小 -->
+        <item name="android:background">@android:color/transparent</item>
+        <!-- dialog背景样式 -->
+
+    </style>
+
+
+    <style name="AreaDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无title -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- dim:模糊的 阴影效果 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景图片的大小也影响窗口的大小 -->
+        <item name="android:background">@android:color/transparent</item>
+        <!-- dialog背景样式 -->
+        <item name="android:windowExitAnimation">@anim/activity_down</item>
+        <item name="android:windowEnterAnimation">@anim/activity_up</item>
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--左侧弹出 -->
+    <style name="AnimationLeftFade">
+        <item name="android:windowEnterAnimation">@anim/in_lefttoright</item>
+        <item name="android:windowExitAnimation">@anim/out_righttoleft</item>
+    </style>
+
+    <style name="CustomCheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+
+    <style name="CustomRadioBtn">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/rb_selector</item>
+        <item name="android:button">@null</item>
+    </style>
+
+</resources>
